@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Urban Brew - Coffee Shop</title>
+  <link rel="stylesheet" href="first.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Urban Brew</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <div class="coffee-cup-container">
+        <div class="coffee-cup">
+          <div class="steam steam1"></div>
+          <div class="steam steam2"></div>
+          <div class="steam steam3"></div>
+        </div>
+      </div>
+      <h2>Fresh Coffee, <span class="highlight">Cozy</span> Vibes</h2>
+      <p>Start your day the Urban way!</p>
+      <a href="#menu" class="menu-btn">See Our Menu</a>
+    </div>
+  </header>
+
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>Urban Brew is your local coffee hub. We serve organic blends, cozy vibes, and a taste you'll never forget.</p>
+    <p>Founded by passionate coffee lovers, Urban Brew started as a dream to bring the finest brews and a sense of community to the heart of Pune. Our team is dedicated to crafting each cup with care, using only the best organic beans sourced from local farmers and sustainable partners.</p>
+    <p>We believe a coffee shop is more than just a place to grab a drink—it's a space to connect, relax, and be inspired. Whether you're here to work, catch up with friends, or simply enjoy a moment of peace, our cozy atmosphere and friendly staff are here to make your day brighter.</p>
+    <ul class="about-values">
+      <li>☕ 100% Organic & Ethically Sourced Beans</li>
+      <li>🌱 Eco-friendly Practices</li>
+      <li>🏡 Cozy, Inviting Ambience</li>
+      <li>🤝 Community Events & Local Art</li>
+      <li>😊 Friendly, Passionate Baristas</li>
+    </ul>
+  </section>
+   
+  <section class="menu" id="menu">
+    <h2>Our Coffee Selection</h2>
+    
+    <div class="cards">
+      <div class="card">
+        <img src="Cappuccino.jpg" alt="Cappuccino">
+        <h3>Cappuccino</h3>
+        <p class="price">₹150</p>
+        <p id="Cappuccino"></p>
+
+       <button type="button" onclick='document.getElementById("Cappuccino").innerHTML = "Your Cappuccino booked!!"'>Book</button>
+      </div>
+      <div class="card">
+        <img src="Espresso.jpg" alt="Espresso">
+        <h3>Espresso</h3>
+        <p class="price">₹120</p>
+        <p id="Espresso"></p>
+        <button type="button" onclick='document.getElementById("Espresso").innerHTML="Your Espresso Booked!!"'>Book</button>
+      </div>
+      <div class="card">
+        <img src="Latte.jpg" alt="Latte">
+        <h3>Latte</h3>
+        <p class="price">₹160</p>
+        <p id="Latte"></p>
+        <button type="button" onclick='document.getElementById("Latte").innerHTML="Your Latte Booked !!"'>Book</button>
+      </div>
+      <div class="card">
+        <img src="Mocha.jpg" alt="Mocha">
+        <h3>Mocha</h3>
+        <p class="price">₹170</p>
+        <p id="Mocha"></p>
+        <button type="button" onclick='getElementById("Mocha").innerHTML="Your Mocha bookedd"'>Book</button>
+      </div>
+      <div class="card">
+        <img src="Americano.webp" alt="Americano">
+        <h3>Americano</h3>
+        <p class="price">₹130</p>
+        <p id="Americano"></p>
+        <button type="button"onclick='getElementById("Americano").innerHTML="Your Americano Booked !!"'>Book</button>
+      </div>
+      <div class="card">
+        <img src="Cold Brew.jpg" alt="Cold Brew">
+        <h3>Cold Brew</h3>
+        <p class="price">₹180</p>
+        <p id="Cold">
+          <button type="button"onclick='getElementById("Cold").innerHTML="Your Cold Brew Booked!!"'>Book</button>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:contact@urbanbrew.com">contact@urbanbrew.com</a> | Phone: <a href="tel:+919175226010">+91-9175226010</a></p>
+    <p>Visit us: Garden Road , Paithan</p>
+  </section>
+
+  <section class="feedback" id="feedback">
+    <h2>Feedback</h2>
+    <form>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="rating">Rating:</label><br>
+      <select id="rating" name="rating" required>
+        <option value="">Select</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Urban Brew</p>
+  </footer>
+</body>
+</html>
